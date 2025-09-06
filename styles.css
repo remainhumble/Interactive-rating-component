@@ -1,13 +1,101 @@
-@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Overpass', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Overpass", sans-serif;
+}
+
+body {
+  background-color: hsl(216, 12%, 8%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#star {
+  background-color: hsl(213, 10%, 22%);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: hsl(0, 100%, 100%);
+  font-weight: 700;
 }
 
 p {
-    font-size: 15px;
-    font-weight: 400;
+  font-size: 15px;
+  font-weight: 400;
+  color: hsl(217, 12%, 63%);
+  line-height: 1.5;
+}
+
+.rating-scale {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rating-option {
+  background-color: hsl(213, 10%, 22%);
+  color: hsl(217, 12%, 63%);
+  font-weight: 700;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin: 20px 0 20px 0;
+}
+
+.rating-option:focus {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(216, 12%, 8%);
+}
+
+.rating-option:active {
+  background-color: hsl(0, 100%, 100%);
+  color: hsl(216, 12%, 8%);
+}
+
+#submit {
+  width: 100%;
+  padding: 12px;
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(216, 12%, 8%);
+  text-transform: uppercase;
+  border: none;
+  border-radius: 24px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#submit:active {
+  background-color: hsl(0, 100%, 100%);
+  color: hsl(216, 12%, 8%);
+}
+
+.card {
+  background-color: hsl(213, 19%, 18%);
+  border-radius: 12px;
+  padding: 24px;
+  max-width: 350px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 376px) {
+  .card {
+    border-radius: 32px;
+  }
 }
